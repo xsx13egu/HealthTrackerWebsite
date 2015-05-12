@@ -1,0 +1,364 @@
+/* ---------- GENERAL ---------- */
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+body, html, button, select, textarea {
+    margin: 0px;
+    padding: 0px;
+    color: #4d4d4d;
+    font: 14px "Helvetica Neue",Arial,Helvetica,sans-serif;
+    line-height: 18px;
+    //background-color: #feda02;
+}
+
+input{
+    margin: 0px;
+    padding: 0px;
+    font: 12px "Helvetica Neue",Arial,Helvetica,sans-serif;
+    line-height: 18px;
+}
+
+h1 {
+    font-size: 22px;
+    line-height: 1.2em;
+    margin: 0 0 10px;
+    display: inline;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1dabb8;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+}
+
+input {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+
+
+/* ---------- LOGIN-FORM ---------- */
+#login-form {
+  width: 300px;
+}
+
+#login-form h3 {
+  background-color: #282830;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#login-form fieldset {
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  position: relative;
+}
+
+#login-form fieldset:before {
+  background-color: #fff;
+  content: "";
+  height: 8px;
+  left: 50%;
+  margin: -4px 0 0 -4px;
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 8px;
+}
+
+#login-form input {
+  font-size: 14px;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+  border: 1px solid #dcdcdc;
+  padding: 12px 10px;
+  width: 100%;
+}
+
+#login-form input[type="email"] {
+  border-radius: 3px 3px 0 0;
+}
+
+#login-form input[type="password"] {
+  border-top: none;
+  border-radius: 0px 0px 3px 3px;
+}
+
+#login-form input[type="submit"] {
+  background: #1dabb8;
+  border-radius: 3px;
+  color: #fff;
+  float: right;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px 20px;
+}
+
+#login-form input[type="submit"]:hover {
+  background: #198d98;
+}
+
+#login-form footer {
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.info {
+  background: #e5e5e5;
+  border-radius: 50%;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 10px 0 0;
+  text-align: center;
+  width: 20px;
+}
+
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 5, 2015, 4:32:22 PM
+    Author     : Spektre
+*/
+
+div {
+    display: block;
+}
+
+img {
+    border:0;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#content {
+    position: relative;
+}
+
+#wrapper {
+    width: 90%;
+    min-width: 500px;
+    margin: auto;
+}
+
+#header-container{
+    background: #feda02;
+    height: 91px;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+#nav-container {
+    border-bottom: 1px solid #d6dadc;
+    position: relative;
+    text-align: center;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.header-logo-container{
+    bottom: 0;
+    display: block;
+    height: 91px;
+    left: 45%;
+    margin-left: -40px;
+    position: absolute;
+    top: 5px;
+    width: 205px;
+    text-align: center;
+    z-index: 2;
+}
+
+.header-logo-default {
+    background-image: url(css/logo_default.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 255px 91px;
+    height: 91px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 205px;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item-button {
+    background-color: #d6dadc;
+    border: 1px solid #d6dadc;
+    border-bottom: 0;
+    border-radius: 3px 3px 0 0;
+    display: inline-block;
+    font-weight: 700;
+    margin: 2px 2px 0;
+    padding: 8px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 32px;
+    position: relative;
+    overflow: auto;
+}
+
+.profile-details-container {
+    position: absolute;
+    top:32px;
+    right: 30px;
+    width: 250px;
+}
+
+.profile-details-content {
+    border-radius: 3px;
+    border: 1px solid #000000;
+    color: #000000;
+    display: block;
+    position: relative;
+    background-color:#e2e4e6;
+    padding: 5px;
+}
+
+.profile-details-data-type {
+    list-style-type: none;
+    font-weight: 600;
+    display: inline-block;
+    overflow: auto;
+    padding-left: 35px;
+}
+
+.profile-details-data-info {
+    display: inline-block;
+    padding-left: 92px;
+    text-align: center;
+    overflow: auto;
+}
+
+.profile-edit-button-link {
+    border: 1px solid #e2e4e6;
+    height: 38px;
+    width: 100px;
+    max-width: 300px;
+    margin-top: 6px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    line-height: 38px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    left: 2%;
+    /*Gradien*/
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+.profile-edit-button-link:hover{
+    color: #e2e4e6;
+    background-color: #026aa7;
+}
+
+.profile-image-container {
+    float: left;
+}
+
+.profile-image {
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    cursor: default;
+    display: block;
+    height: 85px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    width: 85px;
+    z-index: 0;
+}
+
+.profile-name-container {
+    display: none;
+    position: absolute;    
+    top: 32px;
+    right: 32px;
+    width: 230px;
+}
+
+.profile-name-details {
+    margin:0 0 0 100px;
+}
+
+.main-container{
+    border-bottom: 1px solid #d6dadc;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
